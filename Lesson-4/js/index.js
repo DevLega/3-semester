@@ -7,8 +7,14 @@ const string2 = 'Найбільший РОЗПРОДАЖ цього тижня, 
 const string3 = 'Рекламна кампанія #jsIsAwesome';
 
 
-if (string1.includes(blacklistedWord1) || string1.includes(blacklistedWord2)) {
-    console.log(`Рядок "${string1}" має спам.`);
-} else {
-    console.log(`Рядок "${string1}" не має спаму.`);
+function checkSpam(text) {
+    const lowerText = text.toLowerCase();
+    if (lowerText.includes(blacklistedWord1) || lowerText.includes(blacklistedWord2)) {
+        console.log(`Рядок "${text}" має спам.`);
+    } else {
+        console.log(`Рядок "${text}" не має спаму.`);
+    }
 }
+
+checkSpam(string1)
+checkSpam(string2)
