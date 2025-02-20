@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="js/index.js" type="module" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #block {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+
+    .game-container {
+      padding: 20px;
+      align-content: center;
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+
+  <h3>Переміщення елемента</h3>
+  <div id="box"></div>
+
+  <hr>
+
+  <h2>Гра "Натисни правильну клавішу"</h2>
+  <div class="game-container">
+    <p>Натисни клавішу: <span id="key" style="font-weight: bold;"></span></p>
+    <p id="message"></p>
+    <button id="startGame">Нова гра</button>
+  </div>
+
+  <hr>
+
+  <h2>Переміщення блока мишею</h2>
+  <div id="block"></div>
+
+  </body>
+</html>
