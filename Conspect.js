@@ -56,7 +56,16 @@
     slice() // Вирізає символи, "JavaScript".slice(0,3) = Java
     substr() // Вирізає символи від першого заданого значення, "JavaScript".substr(3,1) = S
     replace() // Заміняє тільки одне слово, "Java! Java!".replace('Java', 'HTML') = HTML! Java!
-    replaceAll() // Заміняє всі слова, "Java! Java!".replace('Java', 'HTML') = HTML! HTML!
+    replaceAll() // Заміняє всі слова, "Java! Java!".replaceAll('Java', 'HTML') = HTML! HTML!
     repeat()
-    charAt() // Повертає символ з певної строки cha
-//
+    charAt() // Повертає символ з певної строки
+    // Massive
+    wordArr() // Hello, world! Welcome to JavaScript - [ 'Hello,', 'world!', 'Welcome', 'to', 'JavaScript' ]
+    unshift() // Поміщяє на початок
+    push() // поміщяє елемент в кінець массиву 
+    pop() // забирає з кінця
+    shift() // забирає з початку
+    splice() // видаляє, додає або замінює елементи
+    concat() // обєднує два массиви
+    slice() // вирізає частину массиву
+    //forEach

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+    .border {
+      border: 2px solid red;
+    }
+    .hidden {
+      display: none;
+    }
+    .test_style {
+      color: red;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: medium;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <script src="js/index.js" type="module"></script>
+
+    <h3>Keydown, keypress, keyup</h3>
+    <input type="text" id="inputKeyEvent" />
+    <p id="KeyEventOutput"></p>
+
+    <hr>
+
+    <h3>Різниця між code і key</h3>
+    <p id="keyAndCodeOutput"></p>
+
+    <hr>
+
+    <h3>Комбінація</h3>
+    <p id="combinationOutput"></p>
+
+    <hr>
+
+    <h2>Події миші</h2>
+    <h3>mousedown/mouseup, mouseover/mouseout, mousemove</h3>
+    <div id="mouseOutput" style="width: 100px; height: 100px; background-color: red;"></div>
+
+    <hr>
+
+    <h3>Координати</h3>
+    <p id="mouseCoordinatesOutput"></p>
+    
+  </body>
+</html>
